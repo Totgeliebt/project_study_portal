@@ -1,0 +1,224 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.page_header {
+    height: 120px;
+    background-color: #10376E;
+}
+.container {
+    margin: 0 120px;}
+
+.menu {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px;
+    grid-template-areas:
+        "l h h h h t v v a a a a";
+    align-items: center;
+}
+.logo_header {
+    grid-area: l;
+    width: 132px;
+    background-color: #1389E6;
+    color:white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+
+}
+.heading {
+    grid-area: h;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.clock_img img{
+    grid-area: t;
+    height: 33px;
+    width: 33px;
+}
+.clock {
+    grid-area: v;
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+}
+.user {
+    grid-area: a;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    align-self: center;
+    color: white;
+    width: 375px;
+    height: 81px;
+    background-color: #0B264D;
+    display: flex;
+
+}
+
+.username_img img{
+    width: 50px;
+    height: 50px;
+    margin: 15px 15px 15px 45px;
+}
+.username {
+    margin: auto 0;
+
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+.menu a:hover {
+    font-weight: 700;
+}
+
+main {
+    background-color: #E5E5E5;
+    flex: 1;
+}
+.cards {
+    display: flex;
+   justify-content: center;
+}
+
+.html, .css {
+    background-color: white;
+    flex: 1;
+    padding: 40px;
+    margin: 50px 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    border: 2px solid #CBD3DE;
+}
+h3  {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+}
+img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.tags {
+    border: 2px solid #CBD3DE;
+    padding: 0 37px 48px 30px;
+    background-color: #EAEEF4;
+    margin-bottom: 31px;
+}
+.tags_heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+.tags_container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas:
+        "vid vid vid au au au au tag tag tag tag tag"
+        "cal cal cal for set set set tag tag tag tag tag                     ";
+    align-items: center;
+}
+
+.video {
+    grid-area: vid;
+    color: #1E3351;
+    font-size: 31px;
+    text-underline-offset: 3px;
+}
+.calculator {
+    grid-area: cal;
+    color: #10376E;
+    font-size: 36px;
+    text-underline-offset: 7px;
+}
+.audio-player {
+    grid-area: au;
+    color: #325689;
+    font-size: 38px;
+    text-underline-offset: 7px;
+}
+.forum {
+    grid-area: for;
+    color: #1E3351;
+    font-size: 38px;
+    text-underline-offset: 6px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.settings {
+    grid-area: set;
+    color: #3E6499;
+    font-size: 33px;
+    text-underline-offset: 6px;
+    transform: translateX(-30px);
+
+}
+.tags_table {
+    grid-area: tag;
+    color: #0B1F3A;
+    font-size: 54px;
+    text-underline-offset: 6px;
+   display: flex;
+   align-self: end;
+    transform: translateX(-20px);
+}
+
+footer {
+    background-color: #E1E8F1;
+    height: 166px;
+}
+
+.page_footer {
+   display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+.logo_footer {
+    width: 112px;
+    background-color: #1389E6;
+    color:white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+.footer_text_center {
+    font-size: 18px;
+    font-weight: 400;
+}
+.okay_button_footer {
+    width: 246px;
+    height: 60px;
+    color: white;
+    background-color: #10376E;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.transparant, .copyright_footer {
+    color: #10376E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.5;
+}
