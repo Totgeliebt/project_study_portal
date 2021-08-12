@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="page_header">
+    <div class="container">
+        <div class="menu">
+            <div class="logo_header"><a href="#">Логотип</a></div>
+            <div class="heading"><a href="#">Заголовок как <br> на главной странице</a></div>
+            <div class="tags_table"><a href="#">Таблица тегов</a></div>
+            <div class="video"><a href="#">Видео</a></div>
+            <div class="audio"><a href="#">Аудио</a></div>
+            <div class="calculator"><a href="">Калькулятор</a></div>
+        </div>
+    </div>
+</header>
+<body>
+<div class="wrapper">
+    <div class="user_img">
+        <div class="img">
+        <img src="upload_icon.png" width="30px" height="30px" class="icon" alt="change picture">
+       <p>Изменить<br> фото</p></div>
+    </div>
+    <form class="form" action="" mathod="">
+        <div class="grid_form">
+            <div class="form_heading">Настройки пользователя</div>
+            <div class="user_name">
+                <label for="user_name"><p>Имя пользователя</p></label>
+                <input type="text" id="user_name" name="user_name" placeholder="Павел">
+            </div>
+            <div class="date_of_birth"><p>Дата рождения</p>
+                <select name="day" id="day">
+                    <option value="12">12</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="Jan">Янв</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="1997">1997</option>
+                </select>
+            </div>
+            <div class="login">
+                <label for="login"><p>Логин</p></label>
+                <input type="text" id="login" name="login" placeholder="User">
+            </div>
+            <div class="email">
+                <label for="email"><p>E-mail</p></label>
+                <input type="text" id="email" name="email" placeholder="user@gmail.com">
+            </div>
+            <div class="change_password">Смена пароля</div>
+            <div class="new_password">
+                <label for="new_password"><p>Новый пароль</p></label>
+                <input type="password" id="new_password" name="new_password" placeholder="********">
+            </div>
+            <div class="repeat_password">
+                <label for="repeat_password"><p>Повторите пароль</p></label>
+                <input type="password" id="repeat_password" name="new_password" placeholder="tghfh">
+                <p class="cross">Пароли не совпадают</p>
+            </div>
+            <div class="save_changes">
+                <button>Сохранить изменения</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+<footer>
+    <div class="container">
+        <div class="page_footer">
+            <div class="page_footer_left">
+                <div class="logo_footer">Логотип</div>
+                <div class="copyright_footer">&copy;2021</div>
+            </div>
+            <div class="footer_text_center"> Lorem ipsum dolor. sit amet, consectetuer adipiscing elit. Aenean commodo
+                ligula eget
+                dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </div>
+            <div class="left">
+                <div><button class="okay_button_footer">Окей</button></div>
+                <div class="license_footer"><a class="transparent" href="#">Лицензионное соглашение</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
