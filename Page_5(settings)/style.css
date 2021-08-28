@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.page_header {
+    height: 120px;
+    background-color: #10376E;
+}
+.container {
+    margin: 0 180px;}
+
+.menu {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px;
+    grid-template-areas:
+        "l h h h . . . t t v a cal";
+    align-items: center;
+}
+.logo_header {
+    box-sizing: border-box;
+    grid-area: l;
+    width: 132px;
+    height: 81px;
+    background-color: #1389E6;
+    color:white;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    padding-top: 23px;
+}
+.heading {
+    grid-area: h;
+    font-weight: 600;
+    line-height: 26px;
+}
+.tags_table{
+    grid-area: t;
+}
+
+.video {
+    grid-area: v;
+}
+.audio {
+    grid-area: a;
+}
+.calculator {
+    grid-area: cal;
+}
+a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+.menu a:hover {
+    font-weight: 700;
+}
+/*Хочу здесь применить :not(:nth-child(2)), чтобы логотип и  заголовок не подчеркивались,
+ но почему-то не работает*/
+.menu a:hover::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #37ABFF;
+    display: inline-block;
+    transform: translateY(45px);
+}
+
+.wrapper {
+    display: flex;
+    height: 794px;
+}
+
+.user_img {
+    background-color: #1E3351;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    background-image: url('user_img.png');
+    margin-top: 80px;
+    margin-right: 80px;
+    opacity:0.6;
+}
+.icon {
+transform: translateX(90px)
+            translateY(50px);
+
+}
+.user_img p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    transform: translateX(10px)
+    translateY(50px);
+}
+
+.form {
+    flex: 2;
+    background-color: #EDEEF0;
+}
+
+.grid_form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 70px 100px 100px 50px 120px 80px 194px;
+    grid-template-areas:
+        "h h h h h ."
+        "u u d d . ."
+        "l l e e . . "
+        "ch ch . . . ."
+        "np np rp rp . ."
+        ". . . . . ."
+        "s s s . . .";
+    align-items: start;
+    padding: 50px;
+}
+
+.form_heading {
+    grid-area: h;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: left;
+    color: #041122;
+
+}
+input {
+    width: 373px;
+    height: 60px;
+    border: 2px solid #CBD3DE;
+}
+label > p, .date_of_birth > p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+::placeholder, select {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #041122;
+    padding-left: 20px;
+}
+select {
+    width: 111px;
+    height: 60px;
+    border: 2px solid #CBD3DE;
+    margin-right: 10px;
+}
+select:last-child {
+    margin-right: 0;
+}
+.user_name {
+    grid-area: u;
+}
+.date_of_birth {
+    grid-area: d;
+}
+.login {
+    grid-area: l;
+}
+.email {
+    grid-area: e;
+}
+.change_password {
+    grid-area: ch;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    color: #041122;
+    padding-top: 10px;
+}
+
+.new_password {
+    grid-area: np;
+}
+.repeat_password {
+  grid-area: rp;
+}
+.repeat_password > input {
+    border: 2px solid #E61313;
+}
+.save_changes {
+    grid-area: s;
+}
+.cross {
+    color: #E61313;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/*Не понимаю как сделать, чтобы крестик был по ценру кружка*/
+.cross::before {
+    display: block;
+    float: left;
+    content: "x";
+    width: 15px;
+    height: 15px;
+    background-color: #E61313;
+    border-radius: 100%;
+    margin-right: 5px;
+    color: white;
+}
+
+button {
+    width: 65%;
+    height: 60px;
+    background-color: #1389E6;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+
+}
+
+footer {
+    background-color: #E1E8F1;
+    height: 166px;
+}
+
+.page_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+.logo_footer {
+    box-sizing: border-box;
+    width: 112px;
+    height: 81px;
+    background-color: #1389E6;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 26px;
+    margin-right: 30px;
+    margin-bottom: 22px;
+}
+.footer_text_center {
+    font-size: 18px;
+    font-weight: 400;
+}
+.okay_button_footer {
+    width: 246px;
+    height: 60px;
+    color: white;
+    background-color: #10376E;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.transparent, .copyright_footer, .license_footer a {
+    color: #10376E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.5;
+}
+.license_footer a {
+    text-decoration: underline;
+}
