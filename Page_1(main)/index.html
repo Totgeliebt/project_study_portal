@@ -5,6 +5,7 @@
     <title>Main page</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
 
@@ -13,11 +14,11 @@
         <div class="menu">
             <div class="logo_header"><a href="#">Логотип</a></div>
             <div class="heading"><a href="#">Заголовок как <br> на главной странице</a></div>
-            <div class="clock">
-                <img src="clock.png" alt='clock'><span>12:58</span></div>
+            <div class="clock" >
+                <img src="clock.png" alt='clock'><span id="clock"></span></div>
             <div class="user">
                 <div class="username_img"><img src="user_pic.png" alt="user photo"></div>
-                <div class="username"><a href="#">Имя пользователя</a></div>
+                <div class="username"><a href="#" id="modal">Имя пользователя</a></div>
             </div>
         </div>
     </div>>
@@ -57,11 +58,11 @@
                 </div>
 
                 <div class="audio-player">  <a class="audio-player" href="#">Аудио-проигрыватель</a></div>
-                <div><a class="forum" href="#">Форум</a></div>
-                <div class="settings"> <a class="settings" href="#">Настройки</a></div>
+                <div><a class="forum" href="/Page_2(forum)">Форум</a></div>
+                <div class="settings"> <a class="settings" href="/Page_5(settings)">Настройки</a></div>
 
 
-                <div class="tags_table"><a class="tags_table" href="#">Таблица тегов</a></div>
+                <div class="tags_table"><a class="tags_table" href="/Page_3(tags)">Таблица тегов</a></div>
             </div>
         </div>
     </div>
@@ -84,5 +85,30 @@
         </div>
     </div>
 </footer>
+<div class="overlay">
+    <div class="popup">
+        <div class="popup-close">&times;
+        </div>
+        <div class="popup-title">
+            Форма авторизации</div>
+        <div class="popup-form">
+            <form action="#" class="main-form">
+                <label class="popup-form__label" for="email">
+                    E-mail
+                </label>
+                <input class="popup-form__input" id="email" name="email" type="email" required
+                       placeholder="User@gmail.coms">
+                <label class="popup-form__label" for="password">
+                    Пароль
+                </label>
+                <input class="popup-form__input" id="password" name="password" type="password" required
+                       placeholder="FKJGVMF9fk_1">
+                <button class="button popup-form__btn">
+                    Авторизация
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
